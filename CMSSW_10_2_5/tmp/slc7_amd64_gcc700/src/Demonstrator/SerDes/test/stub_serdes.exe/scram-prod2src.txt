@@ -1,0 +1,1 @@
+stub_serdes.exe Demonstrator/SerDes/test/src/stub_serdes.cxx

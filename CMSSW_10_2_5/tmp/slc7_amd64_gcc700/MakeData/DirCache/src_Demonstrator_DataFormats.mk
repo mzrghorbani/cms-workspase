@@ -1,0 +1,2 @@
+ALL_PACKAGES += Demonstrator/DataFormats
+subdirs_src_Demonstrator_DataFormats := src_Demonstrator_DataFormats_interface src_Demonstrator_DataFormats_src

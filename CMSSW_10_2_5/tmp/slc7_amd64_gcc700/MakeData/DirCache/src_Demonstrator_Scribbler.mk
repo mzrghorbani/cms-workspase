@@ -1,0 +1,2 @@
+ALL_PACKAGES += Demonstrator/Scribbler
+subdirs_src_Demonstrator_Scribbler := src_Demonstrator_Scribbler_plugins src_Demonstrator_Scribbler_python src_Demonstrator_Scribbler_src src_Demonstrator_Scribbler_test

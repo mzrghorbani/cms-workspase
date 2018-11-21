@@ -1,0 +1,2 @@
+ALL_PACKAGES += Demonstrator/EMPIOTools
+subdirs_src_Demonstrator_EMPIOTools := src_Demonstrator_EMPIOTools_interface src_Demonstrator_EMPIOTools_src src_Demonstrator_EMPIOTools_test

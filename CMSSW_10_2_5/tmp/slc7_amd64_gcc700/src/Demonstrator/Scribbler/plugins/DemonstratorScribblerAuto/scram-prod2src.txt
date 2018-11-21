@@ -1,0 +1,1 @@
+DemonstratorScribblerAuto Demonstrator/Scribbler/plugins/Writer.cc Demonstrator/Scribbler/plugins/Reader.cc

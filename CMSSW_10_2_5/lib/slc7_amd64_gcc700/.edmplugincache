@@ -1,0 +1,14 @@
+pluginDemonstratorProducerAuto.so DigiHTGrouper CMS%EDM%Framework%Module
+pluginDemonstratorProducerAuto.so DigiHTGrouper CMS%EDM%Framework%ParameterSet%Description
+pluginDemonstratorProducerAuto.so DigiHtStubsRouter CMS%EDM%Framework%Module
+pluginDemonstratorProducerAuto.so DigiHtStubsRouter CMS%EDM%Framework%ParameterSet%Description
+pluginDemonstratorProducerAuto.so DigiProducer CMS%EDM%Framework%Module
+pluginDemonstratorProducerAuto.so DigiProducer CMS%EDM%Framework%ParameterSet%Description
+pluginDemonstratorProducerAuto.so DummyDigiProducer CMS%EDM%Framework%Module
+pluginDemonstratorProducerAuto.so DummyDigiProducer CMS%EDM%Framework%ParameterSet%Description
+pluginDemonstratorScribblerAuto.so Reader CMS%EDM%Framework%Module
+pluginDemonstratorScribblerAuto.so Reader CMS%EDM%Framework%ParameterSet%Description
+pluginDemonstratorScribblerAuto.so Writer CMS%EDM%Framework%Module
+pluginDemonstratorScribblerAuto.so Writer CMS%EDM%Framework%ParameterSet%Description
+pluginL1TriggerTrackFindingTMTTAuto.so TMTrackProducer CMS%EDM%Framework%Module
+pluginL1TriggerTrackFindingTMTTAuto.so TMTrackProducer CMS%EDM%Framework%ParameterSet%Description

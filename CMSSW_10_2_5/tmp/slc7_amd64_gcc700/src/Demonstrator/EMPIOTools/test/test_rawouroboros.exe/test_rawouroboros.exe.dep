@@ -1,0 +1,7 @@
+tmp/slc7_amd64_gcc700/src/Demonstrator/EMPIOTools/test/test_rawouroboros.exe/src/test_rawouroboros.cxx.o: \
+ src/Demonstrator/EMPIOTools/test/src/test_rawouroboros.cxx \
+ src/Demonstrator/EMPIOTools/interface/RawReader.hpp \
+ src/Demonstrator/EMPIOTools/interface/RawData.hpp \
+ src/Demonstrator/EMPIOTools/interface/Frame.hpp \
+ src/Demonstrator/EMPIOTools/interface/RawWriter.hpp
+

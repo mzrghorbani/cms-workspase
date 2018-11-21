@@ -1,0 +1,42 @@
+{ decls }
+namespace demo {  }
+namespace std {  }
+namespace edm {  }
+namespace edm { template <typename T> class Wrapper; }
+
+[ libDemonstratorDataFormats.so ]
+# List of selected classes
+class demo::DigiDTCStub
+class demo::DigiHTMiniStub
+class demo::DigiHTStub
+class demo::DigiHTStubBase
+class demo::DigiKF4Track
+class demo::DigiRouteId
+class demo::DigiTrack
+class demo::RoutableDigiObject
+class edm::Wrapper<std::vector<demo::DigiDTCStub> >
+class edm::Wrapper<std::vector<demo::DigiHTMiniStub> >
+class edm::Wrapper<std::vector<demo::DigiHTStub> >
+class edm::Wrapper<std::vector<demo::DigiHTStubBase> >
+class edm::Wrapper<std::vector<demo::DigiKF4Track> >
+class edm::Wrapper<std::vector<demo::DigiTrack> >
+class edm::Wrapper<vector<demo::DigiDTCStub> >
+class edm::Wrapper<vector<demo::DigiHTMiniStub> >
+class edm::Wrapper<vector<demo::DigiHTStub> >
+class edm::Wrapper<vector<demo::DigiHTStubBase> >
+class edm::Wrapper<vector<demo::DigiKF4Track> >
+class edm::Wrapper<vector<demo::DigiTrack> >
+class vector<demo::DigiDTCStub>
+class vector<demo::DigiHTMiniStub>
+class vector<demo::DigiHTStub>
+class vector<demo::DigiHTStubBase>
+class vector<demo::DigiKF4Track>
+class vector<demo::DigiTrack>
+header Demonstrator/DataFormats/interface/DigiDTCStub.hpp
+header Demonstrator/DataFormats/interface/DigiHTMiniStub.hpp
+header Demonstrator/DataFormats/interface/DigiHTStub.hpp
+header Demonstrator/DataFormats/interface/DigiHTStubBase.hpp
+header Demonstrator/DataFormats/interface/DigiKF4Track.hpp
+header Demonstrator/DataFormats/interface/DigiRouteId.hpp
+header Demonstrator/DataFormats/interface/DigiTrack.hpp
+header Demonstrator/DataFormats/interface/RoutableDigiObject.hpp

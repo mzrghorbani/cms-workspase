@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 19 15:18:52 2018
+# Process ID: 20871
+# Current directory: /home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/top.vds
+# Journal file: /home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xcku115-flvb1760-2-e -flatten_hierarchy none -directive AreaOptimized_high -control_set_opt_threshold 1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20991 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1766.926 ; gain = 0.000 ; free physical = 1825 ; free virtual = 10620
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_top.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'emp_slim_infra' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_infra.vhd:51]
+	Parameter OSC_CLK_FREQ bound to: 100.000000 - type: float 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'sys_rst_n_ibuf' to cell 'IBUF' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_infra.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'emp_clocks' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:23]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibufds_gte3_sys_clk' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:36]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN1_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'mmcm_user_clk' to cell 'MMCME3_BASE' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:50]
+INFO: [Synth 8-113] binding component instance 'bufg_ipb' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:76]
+INFO: [Synth 8-113] binding component instance 'bufg_40pseudo' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'emp_clocks' (1#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_clocks.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'emp_oscclk' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_oscclk.vhd:20]
+	Parameter OSC_FREQ bound to: 100.000000 - type: float 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'ibufds_osc' to cell 'IBUFDS' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_oscclk.vhd:29]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN1_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'mmcm_osc_clk' to cell 'MMCME3_BASE' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_oscclk.vhd:41]
+INFO: [Synth 8-113] binding component instance 'bufg_40ext' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_oscclk.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'emp_oscclk' (2#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/us/emp_oscclk.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'pcie_dma_if' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:62]
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_NUM_USR_IRQ bound to: 1 - type: integer 
+WARNING: [Synth 8-5640] Port 'msix_enable' is missing in component declaration [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:161]
+INFO: [Synth 8-3491] module 'xdma_0' declared at '/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/xdma_0_stub.vhdl:5' bound to instance 'xdma_0_i' of component 'xdma_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'xdma_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/xdma_0_stub.vhdl:93]
+INFO: [Synth 8-3491] module 'axi_bram_ctrl_0' declared at '/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/axi_bram_ctrl_0_stub.vhdl:5' bound to instance 'DP_BRAM_control' of component 'axi_bram_ctrl_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:423]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/axi_bram_ctrl_0_stub.vhdl:62]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at '/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'blk_mem_axiLM_inst' of component 'blk_mem_gen_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:495]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/blk_mem_gen_0_stub.vhdl:30]
+INFO: [Synth 8-638] synthesizing module 'pcie_int_gen_msix' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_int_gen_msix.vhd:21]
+WARNING: [Synth 8-6014] Unused sequential element clk_count_reg was removed.  [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_int_gen_msix.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'pcie_int_gen_msix' (3#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_int_gen_msix.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'pcie_dma_if' (4#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/pcie_dma/firmware/hdl/pcie_dma_if.vhd:62]
+INFO: [Synth 8-3491] module 'buffer_trans_if' declared at '/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:9' bound to instance 'ram_to_trans_converter' of component 'buffer_trans_if' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_infra.vhd:165]
+INFO: [Synth 8-6157] synthesizing module 'buffer_trans_if' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:9]
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/blk_mem_gen_2_stub.vhdl:19]
+WARNING: [Synth 8-689] width (12) of port connection 'addrb' does not match port width (11) of module 'blk_mem_gen_2_bbox_3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:81]
+INFO: [Synth 8-6157] synthesizing module 'tx_dpram' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/tx_dpram.v:8]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/proj/kf-hls/top/top.runs/synth_1/.Xil/Vivado-20871-centos-home/realtime/blk_mem_gen_3_stub.vhdl:20]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'blk_mem_gen_3_bbox_4' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/tx_dpram.v:37]
+WARNING: [Synth 8-689] width (11) of port connection 'addrb' does not match port width (10) of module 'blk_mem_gen_3_bbox_4' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/tx_dpram.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'tx_dpram' (5#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/tx_dpram.v:8]
+WARNING: [Synth 8-689] width (12) of port connection 'waddr' does not match port width (13) of module 'tx_dpram' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:107]
+WARNING: [Synth 8-689] width (10) of port connection 'raddr' does not match port width (13) of module 'tx_dpram' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:108]
+INFO: [Synth 8-6157] synthesizing module 'ClockDomainCross' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/ClockDomainCross.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDomainCross' (6#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/ClockDomainCross.v:10]
+WARNING: [Synth 8-3848] Net trans_in_busy in module/entity buffer_trans_if does not have driver. [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_trans_if' (7#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ipbus_pcie/firmware/hdl/buffer_trans_if.v:9]
+INFO: [Synth 8-638] synthesizing module 'transactor' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'transactor_if' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_if.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'transactor_if' (8#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_if.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'transactor_sm' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_sm.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'transactor_sm' (9#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_sm.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'transactor_cfg' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_cfg.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'transactor_cfg' (10#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_cfg.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'transactor' (11#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'emp_slim_infra' (12#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_infra.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 5 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel' (13#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'emp_info' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/info/firmware/hdl/emp_info.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'emp_info' (14#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/info/firmware/hdl/emp_info.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'emp_ctrl' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ctrl/firmware/hdl/emp_ctrl.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 3 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 2 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized0' (14#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ipbus_ctrlreg_v' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:67]
+	Parameter N_CTRL bound to: 1 - type: integer 
+	Parameter N_STAT bound to: 1 - type: integer 
+	Parameter SWAP_ORDER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_ctrlreg_v' (15#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'ipbus_reg_v' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_reg_v.vhd:55]
+	Parameter N_REG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_reg_v' (16#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_reg_v.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'board_const_reg' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ctrl/firmware/hdl/board_const_reg_legacy.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'board_const_reg' (17#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ctrl/firmware/hdl/board_const_reg_legacy.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'emp_ctrl' (18#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ctrl/firmware/hdl/emp_ctrl.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'emp_ttc' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized1' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 6 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized1' (18#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ipbus_syncreg_v' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_syncreg_v.vhd:74]
+	Parameter N_CTRL bound to: 2 - type: integer 
+	Parameter N_STAT bound to: 4 - type: integer 
+	Parameter SWAP_ORDER bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'syncreg_w' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:58]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'syncreg_w' (19#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_w.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'syncreg_r' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:58]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "yes" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'syncreg_r' (20#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/syncreg_r.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'ipbus_syncreg_v' (21#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_syncreg_v.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'emp_ttc_clocks' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:48]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 24.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 25.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 25.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 24 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 24 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: TRUE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: AUTO - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN1_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN2_INVERTED bound to: 1'b0 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'mmcm' to cell 'MMCME3_ADV' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:101]
+INFO: [Synth 8-113] binding component instance 'bufg_40' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:177]
+INFO: [Synth 8-113] binding component instance 'bufg_p' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:192]
+INFO: [Synth 8-113] binding component instance 'bufg_aux' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:210]
+INFO: [Synth 8-113] binding component instance 'bufg_aux' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:210]
+INFO: [Synth 8-113] binding component instance 'bufg_aux' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:210]
+INFO: [Synth 8-113] binding component instance 'bufr_40s' to cell 'BUFG' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'emp_ttc_clocks' (22#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/us/emp_ttc_clocks.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'emp_ttc_cmd' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc_cmd.vhd:46]
+	Parameter LHC_BUNCH_COUNT bound to: 3564 - type: integer 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'cdel0' to cell 'SRLC32E' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc_cmd.vhd:80]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'cdel1' to cell 'SRLC32E' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc_cmd.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ttc_decoder' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_decoder.vhd:56]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'i_brcst_str1' to cell 'SRL16E' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_decoder.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'ttc_decoder' (23#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_decoder.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'emp_ttc_cmd' (24#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc_cmd.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'l1a_gen' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/l1a_gen.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'ipbus_syncreg_v__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_syncreg_v.vhd:74]
+	Parameter N_CTRL bound to: 1 - type: integer 
+	Parameter N_STAT bound to: 1 - type: integer 
+	Parameter SWAP_ORDER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_syncreg_v__parameterized0' (24#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_syncreg_v.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'rng_wrapper' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_wrapper.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:35]
+WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 30 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized0' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized1' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 31 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized1' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized2' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized2' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 21 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized3' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized4' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 29 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized4' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized5' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+	Parameter K bound to: 28 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48_SR__parameterized5' (25#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'rng_n1024_r32_t5_k32_s1c48' (26#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_n1024_r32_t5_k32_s1c48.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'rng_wrapper' (27#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/rng_wrapper.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'del_array' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array' (28#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter DELAY bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized0' (28#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized1' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter DELAY bound to: 75 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized1' (28#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized2' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter DELAY bound to: 140 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized2' (28#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'l1a_gen' (29#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/l1a_gen.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'ttc_ctrs' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_ctrs.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 9 - type: integer 
+	Parameter DELAY bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized3' (29#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'bunch_ctr' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:59]
+	Parameter CLOCK_RATIO bound to: 1 - type: integer 
+	Parameter CLK_DIV bound to: 1 - type: integer 
+	Parameter CTR_WIDTH bound to: 12 - type: integer 
+	Parameter OCTR_WIDTH bound to: 32 - type: integer 
+	Parameter LHC_BUNCH_COUNT bound to: 3564 - type: integer 
+	Parameter OFFSET bound to: 0 - type: integer 
+	Parameter BC0_BX bound to: 3539 - type: integer 
+	Parameter LOCK_CTR bound to: 1 - type: bool 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: statements in entity [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bunch_ctr' (30#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'ttc_ctrs' (31#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_ctrs.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'freq_ctr_div' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr_div.vhd:26]
+	Parameter N_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_ctr_div' (32#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr_div.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'freq_ctr' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr.vhd:41]
+	Parameter N_CLK bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr.vhd:48]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: statements in entity [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr.vhd:35]
+WARNING: [Synth 8-3919] null assignment ignored [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'freq_ctr' (33#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'ttc_history_new' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_history_new.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'state_history' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/state_history.vhd:46]
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized2' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 2 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 5 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized2' (33#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ipbus_ported_sdpram72' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ported_sdpram72.vhd:61]
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_ported_sdpram72' (34#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ported_sdpram72.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'state_history' (35#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/state_history.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ttc_history_new' (36#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_history_new.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'ttc_cmd_ctrs' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_cmd_ctrs.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ttc_cmd_ctrs' (37#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/ttc_cmd_ctrs.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'tmt_sync' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/tmt_sync.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'tmt_sync' (38#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/tmt_sync.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'emp_ttc' (39#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/ttc/firmware/hdl/emp_ttc.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'emp_datapath' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 4 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized3' (39#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'region_info' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_datapath/firmware/hdl/region_info.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'region_info' (40#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_datapath/firmware/hdl/region_info.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ipbus_dc_fabric_sel' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_fabric_sel.vhd:58]
+	Parameter SEL_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_dc_fabric_sel' (41#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_fabric_sel.vhd:58]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS_GTE3' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:176]
+INFO: [Synth 8-113] binding component instance 'bufg_refclk' to cell 'BUFG_GT' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'freq_ctr_div__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr_div.vhd:26]
+	Parameter N_CLK bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_ctr_div__parameterized0' (41#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/freq_ctr_div.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'ipbus_dc_node' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_node.vhd:55]
+	Parameter I_SLV bound to: 0 - type: integer 
+	Parameter SEL_WIDTH bound to: 5 - type: integer 
+	Parameter PIPELINE bound to: 0 - type: bool 
+WARNING: [Synth 8-6014] Unused sequential element ipbout_d_reg[phase] was removed.  [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_node.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element ipbout_d_reg[ad] was removed.  [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_node.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element ipbout_d_reg[flag] was removed.  [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_node.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'ipbus_dc_node' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_dc_node.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'emp_region' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_region.vhd:62]
+	Parameter INDEX bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized4' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 6 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized4' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized4' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter DELAY bound to: 38 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized4' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'del_array__parameterized5' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter DELAY bound to: 38 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'del_array__parameterized5' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_util/firmware/hdl/del_array.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'bunch_ctr__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:59]
+	Parameter CLOCK_RATIO bound to: 8 - type: integer 
+	Parameter CLK_DIV bound to: 8 - type: integer 
+	Parameter CTR_WIDTH bound to: 12 - type: integer 
+	Parameter OCTR_WIDTH bound to: 12 - type: integer 
+	Parameter LHC_BUNCH_COUNT bound to: 3564 - type: integer 
+	Parameter OFFSET bound to: 0 - type: integer 
+	Parameter BC0_BX bound to: 3539 - type: integer 
+	Parameter LOCK_CTR bound to: 1 - type: bool 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: statements in entity [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bunch_ctr__parameterized0' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/mp7/components/mp7_ttc/firmware/hdl/bunch_ctr.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized5' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 8 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized5' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'emp_chan_buffer' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_chan_buffer.vhd:48]
+	Parameter INDEX bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel__parameterized6' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+	Parameter NSLV bound to: 2 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 2 - type: integer 
+WARNING: [Synth 8-5858] RAM ipb_to_slaves_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel__parameterized6' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ipbus_ctrlreg_v__parameterized0' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:67]
+	Parameter N_CTRL bound to: 2 - type: integer 
+	Parameter N_STAT bound to: 1 - type: integer 
+	Parameter SWAP_ORDER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_ctrlreg_v__parameterized0' (42#1) [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:67]
+ERROR: [Synth 8-5826] no such design unit 'ipbus_ported_dpram72' in library 'work' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_chan_buffer.vhd:173]
+ERROR: [Synth 8-285] failed synthesizing module 'emp_chan_buffer' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_chan_buffer.vhd:48]
+ERROR: [Synth 8-285] failed synthesizing module 'emp_region' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_region.vhd:62]
+ERROR: [Synth 8-285] failed synthesizing module 'emp_datapath' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/datapath/firmware/hdl/emp_datapath.vhd:56]
+ERROR: [Synth 8-285] failed synthesizing module 'top' [/home/mghorbani/workspace/kf_prj/kf-hls-work/src/emp-fwk/components/utils/firmware/hdl/emp_slim_top.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1766.930 ; gain = 0.004 ; free physical = 1820 ; free virtual = 10616
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 24 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 19 15:20:28 2018...

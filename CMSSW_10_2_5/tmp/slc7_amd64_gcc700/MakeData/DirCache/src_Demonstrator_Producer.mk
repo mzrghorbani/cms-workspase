@@ -1,0 +1,2 @@
+ALL_PACKAGES += Demonstrator/Producer
+subdirs_src_Demonstrator_Producer := src_Demonstrator_Producer_plugins src_Demonstrator_Producer_python src_Demonstrator_Producer_test

@@ -1,0 +1,1 @@
+DemonstratorProducerAuto Demonstrator/Producer/plugins/DigiHTGrouper.cc Demonstrator/Producer/plugins/DigiHTMiniStubsRouter.cc Demonstrator/Producer/plugins/DummyDigiProducer.cc Demonstrator/Producer/plugins/DigiProducer.cc

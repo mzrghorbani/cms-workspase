@@ -1,0 +1,2 @@
+ALL_PACKAGES += Demonstrator/SerDes
+subdirs_src_Demonstrator_SerDes := src_Demonstrator_SerDes_interface src_Demonstrator_SerDes_src src_Demonstrator_SerDes_test

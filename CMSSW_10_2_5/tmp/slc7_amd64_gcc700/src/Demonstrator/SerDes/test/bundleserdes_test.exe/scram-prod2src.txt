@@ -1,0 +1,1 @@
+bundleserdes_test.exe Demonstrator/SerDes/test/src/cppunit_main.cxx Demonstrator/SerDes/test/src/bitarray_cppu.cpp Demonstrator/SerDes/test/src/bitarrayserdes_cppu.cpp Demonstrator/SerDes/test/src/bundleserdes_cppu.cpp
